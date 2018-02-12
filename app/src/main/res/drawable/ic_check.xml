@@ -2,8 +2,8 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="64dp"
     android:height="64dp"
-    android:viewportHeight="32.0"
-    android:viewportWidth="32.0">
+    android:viewportHeight="34.0"
+    android:viewportWidth="34.0">
     <group android:name="check">
         <path
             android:fillColor="#00000000"

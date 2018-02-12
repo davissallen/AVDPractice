@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="me.davisallen.avdpractice.MainActivity">
 
     <ImageView
@@ -28,5 +29,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_check"
         android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/ic_dot_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_check_imageview"
+        app:layout_constraintEnd_toEndOf="@+id/ic_check_imageview"
+        app:layout_constraintStart_toStartOf="@+id/ic_check_imageview"
+        app:layout_constraintTop_toTopOf="@+id/ic_check_imageview"
+        app:srcCompat="@drawable/ic_dot"
+        android:contentDescription="TODO" />
+
 
 </android.support.constraint.ConstraintLayout>
