@@ -1,10 +1,12 @@
 package me.davisallen.avdpractice
 
-import android.graphics.drawable.Animatable
+import android.animation.ValueAnimator
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,9 +16,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun doYourDance(view: View) {
-        val mIcDownloadAnimator = ic_download_iv
-        val drawable = mIcDownloadAnimator.drawable
-        if (drawable is Animatable) drawable.start()
+        val mCheckImageView = ic_check_imageview
+
+        val animator = ValueAnimator.ofFloat(1f, 0f)
+        animator.addUpdateListener { animation -> mCheckImageView.alpha = animation.animatedValue as Float }
+
+        animator.duration = 3000
+        animator.repeatMode = ValueAnimator.REVERSE
+        animator.repeatCount = -1
+        animator.start()
     }
 
 }

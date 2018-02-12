@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportHeight="32.0"
+    android:viewportWidth="32.0">
+    <group android:name="check">
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M8,16L13,21"
+            android:strokeColor="#ffffff"
+            android:strokeLineCap="round"
+            android:strokeWidth="1" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M13,21L24,10"
+            android:strokeColor="#ffffff"
+            android:strokeLineCap="round"
+            android:strokeWidth="1" />
+    </group>
+</vector>
