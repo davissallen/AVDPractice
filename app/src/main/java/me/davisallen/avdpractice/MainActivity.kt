@@ -4,7 +4,10 @@ import android.animation.ValueAnimator
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import android.view.animation.*
+import android.view.animation.AccelerateDecelerateInterpolator
+import android.view.animation.OvershootInterpolator
+import android.view.animation.RotateAnimation
+import android.view.animation.ScaleAnimation
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -49,14 +52,15 @@ class MainActivity : AppCompatActivity() {
         dotRotateAnimation.startOffset = 4000
         mDotImageView.startAnimation(dotRotateAnimation)
 
+        // TODO: Handle these sequentially so that they execute in order.
         // Shrink circle.
-        val circleShrinkAnimation = ScaleAnimation(1f, 0.7f, 1f, 0.7f, mCircleImageView.width/2f, mCircleImageView.height/2f)
-        circleShrinkAnimation.interpolator = LinearInterpolator()
-        circleShrinkAnimation.startOffset = 11000
-        circleShrinkAnimation.repeatCount = 0
-        circleShrinkAnimation.fillAfter = true
-        circleShrinkAnimation.duration = 200
-        mCircleImageView.startAnimation(circleShrinkAnimation)
+//        val circleShrinkAnimation = ScaleAnimation(1f, 0.7f, 1f, 0.7f, mCircleImageView.width/2f, mCircleImageView.height/2f)
+//        circleShrinkAnimation.interpolator = LinearInterpolator()
+//        circleShrinkAnimation.startOffset = 11000
+//        circleShrinkAnimation.repeatCount = 0
+//        circleShrinkAnimation.fillAfter = true
+//        circleShrinkAnimation.duration = 200
+//        mCircleImageView.startAnimation(circleShrinkAnimation)
 
     }
 
